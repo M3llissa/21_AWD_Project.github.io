@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DollDaily — Contact Us</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="ContactUs_styles.css" />
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a class="nav-logo" href="index.html">DollDaily<span>✦</span></a>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Products.html">Products &amp; Services</a></li>
+      <li><a href="ContactUs.html" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-label">✦ Get in Touch</span>
+      <h1>We'd love to<br />hear from you!</h1>
+      <p>Have a question, a wild idea, or ready to place an order? We're here and happy to help every step of the way.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTACT BODY ── -->
+  <div class="contact-wrapper">
+
+    <!-- Tab bar: Enquiries (current page) · Order Now (external link) -->
+    <div class="tab-bar">
+      <button class="tab-btn tab-enquiries">✉️ Enquiries</button>
+      <!-- Replace href with your actual order form / store link -->
+      <a class="tab-btn tab-order" href="https://your-order-link.com" target="_blank" rel="noopener noreferrer">
+        🛒 Order Now ↗
+      </a>
+    </div>
+
+    <!-- Two-column layout: FAQ left · sidebar right -->
+    <div class="contact-body">
+
+      <!-- ── LEFT: FAQ / GENERAL QUESTIONS ── -->
+      <div class="faq-col">
+
+        <!-- Question 1 -->
+        <div class="faq-card" id="faq1">
+          <button class="faq-question">
+            <div class="faq-question-text">
+              <span class="faq-num">1</span>
+              <span class="faq-q">
+                <details> </span>
+                  <span class="extra-stuffs">Placing an order is easy! Click the <strong>Order Now</strong> button above to
+                  visit our order form. You'll be asked to describe your idea, upload any reference images, choose your
+                  product type and material, and select your preferred size. Once submitted, our team will reach out
+                  within 1–3 business days with a quote and estimated timeline. </span>
+                  <summary>
+                    <span class="faq-q">How do I place an order?</summary>
+                </details>
+              </span>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-card" id="faq2">
+          <button class="faq-question">
+            <div class="faq-question-text">
+              <span class="faq-num">2</span>
+              <span class="faq-q">
+                <details> </span>
+                  <span class="extra-stuffs">Standard production takes <strong>16-25 business days</strong> from design approval. Express orders can be
+              completed in <strong>10-15 business days</strong> for an additional fee. Shipping times vary by destination
+              — Singapore orders typically arrive within 3–5 days, while international orders take 7–21 days depending
+              on the courier and country. You'll receive a tracking number as soon as your parcel is dispatched. </span>
+                  <summary>
+                    <span class="faq-q">How long does production and shipping take?</summary>
+                </details>
+              </span>
+            </div>
+        </div>
+
+
+        <!-- Question 3 -->
+        <div class="faq-card" id="faq3">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer" onclick="toggleFaq(this)">
+            <div class="faq-question-text">
+              <span class="faq-num">3</span>
+                <span class="faq-q">
+                <details> </span>
+                  <span class="extra-stuffs">Absolutely! Every order includes <strong>up to 2 free revision rounds</strong> before production begins.
+              We'll send you a digital proof for approval, and you can request changes to colours, proportions, or
+              details at that stage. Additional revisions beyond the free allowance are available at a small fee. Once
+              production has started, major design changes are unfortunately not possible, so we encourage thorough
+              review of the proof. </span>
+              <summary>
+                <span class="faq-q">
+                  Can I request revisions on my design?</summary>
+              </details>
+            </span>
+          </div>
+        </div>
+
+        <!-- Still have questions? contact prompt -->
+        <div class="faq-card" style="border-left-color: var(--sun);">
+          <div
+            style="padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+            <div>
+              <p
+                style="font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 1.05rem; color: var(--plum); margin-bottom: 4px;">
+                🌟 Got other questions? Contact us!
+              </p>
+              <p style="font-size: .88rem; color: #7a7a90; line-height: 1.6;">
+                Can't find what you're looking for? Drop us a message using the form and we'll get back to you shortly.
+              </p>
+            </div>
+            <a href="mailto:hello@dollify.com"
+              style="white-space:nowrap; background: var(--sun); color: var(--plum); font-family: 'Baloo 2', cursive; font-weight: 700; font-size: .9rem; padding: 10px 22px; border-radius: 100px; text-decoration: none; transition: transform .2s; box-shadow: 0 4px 16px rgba(255,224,102,.4);"
+              onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+              Email Us →
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /.faq-col -->
+
+      <!-- ── RIGHT: SIDEBAR ── -->
+      <div class="contact-sidebar">
+
+        <!-- Quick message form -->
+        <div class="contact-card">
+          <h3>💌 Send us a message</h3>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Sarah Lee" autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic…</option>
+              <option>General Enquiry</option>
+              <option>Custom Order Question</option>
+              <option>Shipping &amp; Delivery</option>
+              <option>Revision / Changes</option>
+              <option>Bulk / Wholesale</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…"></textarea>
+          </div>
+
+          <button class="btn-submit" type="button">Send Message ✦</button>
+        </div>
+
+        <!-- Contact details -->
+        <div class="contact-card">
+          <h3>📍 Find us</h3>
+          <div class="contact-info-list">
+
+            <div class="contact-info-item">
+              <div class="ci-icon ci-rose">📧</div>
+              <div>
+                <div style="font-weight:700; font-size:.82rem; color:var(--plum); margin-bottom:2px;">Email</div>
+                <a href="mailto:hello@dollify.com">hello@dollify.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon ci-mint">📧</div>
+              <div>
+                <div style="font-weight:700; font-size:.82rem; color:var(--plum); margin-bottom:2px;">Orders</div>
+                <a href="mailto:orders@dollify.com">orders@dollify.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon ci-lilac">📞</div>
+              <div>
+                <div style="font-weight:700; font-size:.82rem; color:var(--plum); margin-bottom:2px;">Phone</div>
+                <a href="tel:+6512345678">+65 1234 5678</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+              <div style="display:flex; align-items:center; gap:12px;">
+                <div class="ci-icon ci-sun">✨</div>
+                <div style="font-weight:700; font-size:.82rem; color:var(--plum);">Socials</div>
+              </div>
+              <div class="social-row">
+                <a class="social-pill" href="#">📸 Instagram</a>
+                <a class="social-pill" href="#">🎵 TikTok</a>
+                <a class="social-pill" href="#">🐦 Twitter</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /.contact-sidebar -->
+
+    </div><!-- /.contact-body -->
+  </div><!-- /.contact-wrapper -->
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html">DollDaily<span>✦</span></a>
+        <p>We create custom dolls, keychains, stickers, and more. Every piece is made with love, just for you.</p>
+        <div class="footer-socials">
+          <a class="social-chip" href="#">Instagram</a>
+          <a class="social-chip" href="#">TikTok</a>
+          <a class="social-chip" href="#">Twitter</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html">Custom Dolls</a></li>
+          <li><a href="products.html">Keychains</a></li>
+          <li><a href="products.html">Stickers</a></li>
+          <li><a href="products.html">Enamel Pins</a></li>
+          <li><a href="products.html">Badges</a></li>
+          <li><a href="Products.html">Prints</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:DollDaily@google.com">DollDaily@google.com</a></li>
+          <li><a href="mailto:DollDaily@yahoo.com">DollDaily@yahoo.com</a></li>
+          <li><a href="tel:+6512345678">+65 1234 5678</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Dollify. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
